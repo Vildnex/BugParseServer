@@ -1,0 +1,17 @@
+{
+  "name": "GraphQL Schema",
+  "schemaPath": "schema.graphql",
+  "documents": "./**/*.graphql",
+  "extensions": {
+    "endpoints": {
+      "GraphQL Parse Endpoint": {
+        "url": "http://localhost:1337/graphql",
+        "headers": {
+          "X-Parse-Application-Id": "COOK_APP",
+          "X-Parse-Master-Key": "MASTER_KEY_1 "
+        },
+        "introspect": true
+      }
+    }
+  }
+}

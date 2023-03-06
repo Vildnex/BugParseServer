@@ -1,0 +1,22 @@
+mutation CreateSomeClass{
+    createClass(input: {
+        name: "SomeClass"
+        schemaFields: {
+            addStrings: [{
+                name: "description"
+            }]
+        }
+    }){
+        __typename
+    }
+}
+
+mutation AddSomeClass{
+    createSomeClass(input: {
+         fields: {
+            description: "description V1"
+         }
+    }){
+        __typename
+    }
+}

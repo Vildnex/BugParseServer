@@ -1,0 +1,6 @@
+extend type Query {
+    hello: String! @resolve
+}
+#extend type SomeClassWhereInput{
+#    something: String @resolve
+#}
